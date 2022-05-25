@@ -3,10 +3,10 @@ from firebase_admin import credentials
 from firebase_admin import db
 
 # Fetch the service account key JSON file contents
-cred = credentials.Certificate('prevent-crime-firebase-adminsdk-ebgw4-6bb68bb91d.json')
+cred = credentials.Certificate('crime-preventor-firebase-adminsdk-lhutu-846b4f6f8d.json')
 # Initialize the app with a service account, granting admin privileges
 firebase_admin.initialize_app(cred, {
-    'databaseURL': 'https://prevent-crime-default-rtdb.firebaseio.com/'
+    'databaseURL': 'https://crime-preventor-default-rtdb.firebaseio.com/'
 })
 ref = db.reference('Criminal')
 
