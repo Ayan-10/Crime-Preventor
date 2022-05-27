@@ -1,10 +1,12 @@
-# Crime-Preventor
+# Crime-Preventer
 
 ### Topic - Prevention of Crime Using Face Recognition
 
 ## Used database
+
 Firebase
 Email ID : firebasetest65@gmail.com
+
 Password : Firebase65@
 
 ## Requirement for running the project
@@ -22,4 +24,4 @@ Password : Firebase65@
 > python home.py
 
 ## Special Requirment
-To test Violence Detection feature. You need to download the `.weights` file from Firebase Storage (Open Crime preventor project in firebase > Click storage > Download yolov3.weights). After downloading yolov3.weights file put it in the same directory of home.py.
+To test Violence Detection feature. You need to download the `.weights` file from Firebase Storage (Open Crime preventer project in firebase > Click storage > Download yolov3.weights). After downloading yolov3.weights file put it in the same directory of home.py.
