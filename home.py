@@ -43,7 +43,7 @@ current_slide = -1
 
 
 root = tk.Tk()
-root.title('Crime Preventor')
+root.title('Crime Preventer')
 root.geometry('1500x900+200+100')
 root.resizable(True, True)
 
@@ -557,7 +557,7 @@ def getPage2():
     pages[2].lift()
 
     basicPageSetup(2)
-    heading.configure(text="Detect Criminal")
+    heading.configure(text="Image Surveillance")
     right_frame.configure(text="Detected Criminals")
 
     btn_grid = tk.Frame(left_frame, bg="#660033")
@@ -690,7 +690,7 @@ def violence():
     pages[2].lift()
 
     basicPageSetup(2)
-    heading.configure(text="Detect Criminal")
+    heading.configure(text="Image Surveillance")
     right_frame.configure(text="Detected Criminals")
 
     btn_grid = tk.Frame(left_frame, bg="#660033")
@@ -832,7 +832,7 @@ def video(p,sfr):
     
     # print("Webcam ",p)
     
-    webcam = cv2.VideoCapture(1)
+    webcam = cv2.VideoCapture(0)
     old_recognized = []
     crims_found_labels = []
     img_label = None
@@ -897,7 +897,7 @@ def video(p,sfr):
 
 
 ######################################## Home Page ####################################
-tk.Label(pages[0], text="Crime Preventor", fg="white", bg="#660033",
+tk.Label(pages[0], text="Crime Preventer", fg="white", bg="#660033",
       font="Arial 35 bold", pady=30).pack()
 
 logo = tk.PhotoImage(file = "logo.png")
@@ -907,7 +907,7 @@ btn_frame = tk.Frame(pages[0], bg="#660033", pady=30)
 btn_frame.pack()
 
 tk.Button(btn_frame, text="Register Criminal", command=getPage1)
-tk.Button(btn_frame, text="Detect Criminal", command=getPage2)
+tk.Button(btn_frame, text="Image Surveillance", command=getPage2)
 tk.Button(btn_frame, text="Video Surveillance", command=getPage3)
 tk.Button(btn_frame, text="Find Missing People", command=findPerson)
 tk.Button(btn_frame, text="Violence Detection", command=violence)
