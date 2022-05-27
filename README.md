@@ -25,3 +25,6 @@ Password : Firebase65@
 
 ## Special Requirment
 To test Violence Detection feature. You need to download the `.weights` file from Firebase Storage (Open Crime preventer project in firebase > Click storage > Download yolov3.weights). After downloading yolov3.weights file put it in the same directory of home.py.
+
+## Technologies used
+This is a python GUI based application which can be initiated from command line interface. I have used **Python**, **Tkinter**, **OpenCV**, and **Firebase** to build the project.
